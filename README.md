@@ -1,6 +1,8 @@
 # Home-Credit-Default-Risk
 I partecipated, on kaggle, to the following challenge: https://www.kaggle.com/c/home-credit-default-risk; By datasets provided by challenge it was requested to develop a model who recognize the people would be able to pay the debt and people won't to be able.
 
+The main (and the only) file present is fds-project.ipynb.
+
 Following is a brief resume of work done in the project:
 
 At first what I did it was to reach a good score only using the application train dataset trying by the Random Forest algorithm that need of imputing data but the reached score it was very low (about 0.65) and then I tried with the Light Gradient Boosting Machine (LGBM) with no need to impute data reaching a slightly higher score. Next I tried by another way namely by adding more features to the application train dataset i.e. merging all the datasets provided by kaggle competition and actually the score grown but not too much. Thus I proceeded by creating new features starting from those already existing by grouping them and using aggregation functions in order to obtain new columns for max, min, mean etc calculated on some existing features. After this work the resulting score was higher than previously. So I compared again the LGBM algorithm with Random Forest algorithm and the LGBM was once again the winner.
